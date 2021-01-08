@@ -1,0 +1,86 @@
+body {
+
+    background-color:aqua;
+
+}
+
+h1{
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:blue;
+    font-size: 50px;
+}
+
+span{
+
+    color:black;
+    font-size: 95px;
+
+}
+
+p.rojo::first-line{
+
+    color: red;
+
+
+}
+
+
+
+ul{
+    list-style-type: none;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+li{
+    
+    color: blue;
+    display: inline;
+}
+li:hover{
+   
+   
+    background-color: yellow;
+}
+
+
+a:link{
+
+    
+ background-color:white;
+   
+}
+a:visited{
+
+   
+    background-color: blue;
+    color:white;
+
+}
+
+img{
+
+    float: right;
+
+}
+
+h3{
+
+    counter-reset: cuenta-versiones;
+
+}
+p.versiones::before{
+
+    
+    content: counter(cuenta-versiones) ". ";
+    counter-increment: cuenta-versiones;
+}
+
+p.pie{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
